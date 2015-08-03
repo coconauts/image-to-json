@@ -1,15 +1,26 @@
 ## Image to JSON converter
 
-Convert image bitmaps using Javascript + Canvas into JSON.
+Convert Image bitmaps to JSON using Javascript + Canvas.
 
 This small black/white image
 
-![Small sample image](/sample/map.png)
+![Small sample image](/sample.png)
 
 will produce this JSON with all black pixel coordinates:
 
 ```json
-[{"x":1,"y":1},{"x":1,"y":2},{"x":1,"y":5},{"x":2,"y":6},{"x":3,"y":6},{"x":4,"y":6},{"x":5,"y":6},{"x":6,"y":1},{"x":6,"y":2},{"x":6,"y":5}]
+[
+  {"x":1,"y":1},
+  {"x":1,"y":2},
+  {"x":1,"y":5},
+  {"x":2,"y":6},
+  {"x":3,"y":6},
+  {"x":4,"y":6},
+  {"x":5,"y":6},
+  {"x":6,"y":1},
+  {"x":6,"y":2},
+  {"x":6,"y":5}
+]
 ```
 
 This code was initially created for drawing hundreds of items in a HTML5 game easily.
