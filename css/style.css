@@ -1,0 +1,46 @@
+canvas {
+  border:1px solid grey;
+}
+
+.sample-panel {
+  border:1px solid gray;
+  padding:10px;
+  width:200px;
+
+  border-radius: 10px;
+  text-align:center;
+
+}
+.logo  {
+  width:100%;
+}
+.rotate-left {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);/* Firefox */
+  -ms-transform: rotate(10deg); /* IE */
+  -o-transform: rotate(10deg); /* Opera */
+}
+.rotate-right {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);/* Firefox */
+  -ms-transform: rotate(-10deg); /* IE */
+  -o-transform: rotate(-10deg); /* Opera */
+}
+
+.pin {
+  width:200px;
+  position:absolute;
+  width:40%;
+  left: 25%;
+}
+
+.sample-image {
+  width:100%;
+}
+
+.image-selected {
+}
+
+#canvas-div{
+  display:none;
+}

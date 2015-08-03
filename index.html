@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=620">
+    <link rel="icon" href="sample.png" type="image/x-icon"/>
+    <title>Image to JSON converter</title>
+    <link rel="stylesheet" href="css/drag.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/utils.js"></script>
+
+</head>
+
+<body>
+    <div class='container'>
+          <a href="https://github.com/coconauts/image-to-json"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/fork-me.png" alt="Fork me on GitHub"></a>
+            <img class='logo' src='images/logo.png'/>
+            <p>Drag an image from your desktop on to the drop zone below to convert the image to JSON, or drag any or the sample images. Maximum resolution 200x200 pixels.</p>
+            <div>
+
+              <div class='sample-panel left rotate-left z-depth-2'>
+                <img class="pin" src='images/pin.png'/>
+
+                <img class='sample-image' src='images/sample2.png'/>
+              </div>
+
+              <div class='sample-panel right rotate-right z-depth-2'>
+                <img class="pin" src='images/pin.png'/>
+
+                <img id='sample-image-random' class='sample-image' src=''/>
+              </div>
+
+              <div id="holder" class='center'>
+                <img src='images/drop-here.png'/>
+              </div>
+
+          </div>
+
+						<p id='error' class='red-text'></p>
+
+            <div class='row center'>
+              <div class="col s4 ">
+                <p><b id='white-detected'>0</b> white pixels detected.</p>
+                <a class='btn red waves-effect waves-light' id='download-white' href="#" download="white.json">download JSON</a>
+                <p></p>
+                <button class='btn blue waves-effect waves-light' id='preview-white' >Preview</button>
+
+              </div>
+              <div class="col s4">
+                <p><b id='black-detected'>0</b> black pixels detected.</p>
+                <a class='btn red waves-effect waves-light' id='download-black' href="#" download="black.json">download JSON</a>
+                <p></p>
+                <button class='btn blue waves-effect waves-light' id='preview-black' >Preview</button>
+
+              </div>
+              <div class="col s4">
+                <p><b id='other-detected'>0</b> color pixels detected.</p>
+                <a class='btn red waves-effect waves-light' id='download-other' href="#" download="other.json">download JSON</a>
+                <p></p>
+                <button class='btn blue waves-effect waves-light' id='preview-other' >Preview</button>
+
+              </div>
+
+            </div>
+            <div class='center' id='canvas-div'>
+                <h3>Canvas preview using JSON</h3>
+						        <canvas width="500" height="500" id='canvas'></canvas>
+              </div>
+
+
+        <script src="js/materialize.min.js"></script>
+
+				<script src="js/canvas/objects.js"></script>
+				<script src="js/canvas/funny.js"></script>
+				<script src="js/canvas/assets.js"></script>
+				<script src="js/canvas/controls.js"></script>
+				<script src="js/canvas/draw.js"></script>
+				<script src="js/canvas/update.js"></script>
+				<script src="js/canvas/main.js"></script>
+
+        <script src="js/imageJson.js"></script>
+
+        <!-- http://html5demos.com/dnd-upload-->
+        <script src="js/drag/drag.js"></script>
+        <script src="js/drag/dragImage.js"></script>
+
+				<script src="js/drag/h5utils.js"></script>
+
+        <script src="js/load.js"></script>
+</body>
+
+</html>
