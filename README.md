@@ -27,13 +27,13 @@ This code was initially created for drawing hundreds of items in a HTML5 game ea
 
 ![Map image used in pacman game](/map.png)
 
-[See a practical usage of this converter](http://coconauts.net/html5/pacman)
+[See a practical usage of this converter](http://html5.coconauts.net/image-to-json)
 
 ### Demo
 
 Open this URL in your browser:
 
-http://coconauts.net/html5/image-to-json
+http://html5.coconauts.net/image-to-json
 
 Drag a small image (up to 200x200) from your computer or drag one of the two images in the page.
 
